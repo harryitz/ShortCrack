@@ -39,5 +39,14 @@
             "resources": ["src/bypass/*", "src/utils/*", "src/*"],
             "matches": ["<all_urls>"]
         }
-    ]
+    ],
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "block_ads",
+                "enabled": true,
+                "path": "rules/block_ads.json"
+            }
+        ]
+    }
 }

@@ -1,77 +1,52 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
-
 body {
-  margin: 0;
-  font-family: "Inter", sans-serif;
-  background-color: #f0f3f7;
-  color: #2d3748;
-  width: 280px;
-  padding: 20px;
-  box-sizing: border-box;
-  user-select: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #1a202c;
+    color: #edf2f7;
+    width: 300px;
 }
 
-.container {
-  background: white;
-  border-radius: 12px;
-  padding: 20px 24px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+.popup {
+    padding: 20px;
 }
 
 h1 {
-  font-weight: 600;
-  font-size: 24px;
-  margin-bottom: 8px;
-  color: #1a202c;
-  user-select: text;
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
-.version {
-  font-weight: 400;
-  font-size: 14px;
-  color: #718096;
-  margin-bottom: 16px;
-  user-select: text;
-}
-
-.version span {
-  font-weight: 600;
-  color: #4a5568;
-}
-
-.author,
-.repo,
-.license {
-  margin-bottom: 14px;
-  font-size: 14px;
-  color: #4a5568;
-  user-select: text;
-}
-
-.author strong,
-.repo strong,
-.license strong {
-  font-weight: 600;
-  color: #2d3748;
+.info {
+    margin: 5px 0;
+    font-size: 14px;
 }
 
 a {
-  color: #3182ce;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-weight: 500;
+    color: #63b3ed;
+    text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
-.icon {
-  width: 18px;
-  height: 18px;
-  fill: #3182ce;
-  flex-shrink: 0;
-  user-select: none;
+.dev-toggle {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #63b3ed;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 11px;
+    color: #a0aec0;
+    text-align: center;
 }
