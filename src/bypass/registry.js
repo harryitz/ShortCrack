@@ -1,8 +1,10 @@
-const modules = import.meta.glob("./*.js", { eager: true });
+const rules = [];
 
-const rules = Object.values(modules)
-    .map((mod) => mod.default)
-    .filter((r) => r?.match && r?.bypass);
+export function register(rule) {
+    if (rule?.match && rule?.bypass) {
+        rules.push(rule);
+    }
+}
 
 export async function bypassUrl(url) {
     for (const rule of rules) {

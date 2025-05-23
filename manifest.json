@@ -18,7 +18,8 @@
     ],
     "host_permissions": ["<all_urls>"],
     "background": {
-        "service_worker": "src/background.js"
+        "service_worker": "src/background.js",
+        "type": "module"
     },
     "icons": {
         "16": "src/icons/icon16.png",
@@ -31,6 +32,12 @@
             "matches": ["<all_urls>"],
             "js": ["src/content.js"],
             "run_at": "document_idle"
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["src/bypass/*", "src/utils/*", "src/*"],
+            "matches": ["<all_urls>"]
         }
     ]
 }
