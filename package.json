@@ -1,0 +1,16 @@
+{
+  "name": "shortcrack",
+  "version": "1.0.0",
+  "description": "<h1>ShortCrack<img src=\"src/icons/icon128.png\" height=\"64\" width=\"64\" align=\"left\"></img></h1><br/>\r A browser extension to bypass shortened URLs and redirect safely to the original destination.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:crx": "node scripts/build-crx.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "crx3": "^1.1.3"
+  }
+}
