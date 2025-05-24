@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>ShortCrack – Redirecting</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            :root {
+                --bg-color: #0f172a;
+                --text-color: #f1f5f9;
+                --accent: #3b82f6;
+                --muted: #94a3b8;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: var(--bg-color);
+                color: var(--text-color);
+                font-family: "Segoe UI", sans-serif;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                text-align: center;
+            }
+
+            .logo {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 24px;
+            }
+
+            .logo img {
+                width: 40px;
+                height: 40px;
+            }
+
+            .logo span {
+                font-size: 24px;
+                font-weight: bold;
+                color: var(--accent);
+            }
+
+            h1 {
+                font-size: 28px;
+                margin: 0;
+            }
+
+            .countdown {
+                font-size: 60px;
+                margin: 20px 0;
+                font-weight: bold;
+                color: var(--accent);
+            }
+
+            .message {
+                font-size: 16px;
+                color: var(--muted);
+            }
+
+            .footer {
+                position: absolute;
+                bottom: 16px;
+                font-size: 12px;
+                color: var(--muted);
+            }
+
+            @media (max-width: 500px) {
+                .countdown {
+                    font-size: 40px;
+                }
+
+                h1 {
+                    font-size: 22px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="logo">
+            <img src="../icons/icon128.png" alt="ShortCrack Logo" />
+            <span>ShortCrack</span>
+        </div>
+
+        <h1>Redirecting you to your destination...</h1>
+        <div class="countdown">3</div>
+        <div class="message">Sit tight! You'll be redirected shortly.</div>
+
+        <div class="footer">Made by harryitz with ❤️</div>
+
+        <script src="redirect.js"></script>
+    </body>
+</html>
