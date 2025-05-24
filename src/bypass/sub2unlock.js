@@ -3,7 +3,7 @@ import { wait } from "../utils/wait.js";
 import { register } from "./registry.js";
 
 register({
-    match: /sub2unlock\.com/,
+    match: [/sub2unlock\.com/],
     async bypass(url) {
         await wait(1000);
         const scriptTag = document.getElementById("__NEXT_DATA__");
