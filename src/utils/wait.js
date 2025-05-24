@@ -1,5 +1,10 @@
-export function wait(duration) {
+export async function wait(duration) {
     showToast(duration);
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve();
+        }, duration);
+    });
 }
 
 function showToast(timeout) {

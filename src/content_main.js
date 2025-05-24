@@ -1,4 +1,4 @@
-import "./bypass/test.js";
+import "./bypass/sub2unlock.js";
 import { bypassUrl } from "./bypass/registry.js";
 import info from "./shortcrack.js";
 
