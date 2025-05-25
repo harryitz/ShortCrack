@@ -4,6 +4,7 @@ import { register } from "./registry.js";
 
 register({
     match: [/sub2unlock\.com/],
+    depends: [],
     async bypass(url) {
         await wait(1000);
         const scriptTag = document.getElementById("__NEXT_DATA__");
@@ -15,6 +16,6 @@ register({
             if (sinkData) {
                 forward(sinkData.unlocked_link);
             }
-        }
+        }1
     },
 });
